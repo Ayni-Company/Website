@@ -106,11 +106,12 @@ jQuery(document).ready(function($) {
     this_form.find('.loading').slideDown();
     
     $.ajax({
-      type: "POST",
       url: action,
-      data: str,
+      method: "POST",
+      data: {email: document.getElementById("email").value, message: document.getElementById("message").value},
+      dataType: "json",
       success: function(msg) {
-        if (msg == 'OK') {
+        if (msg.ok) {
           this_form.find('.loading').slideUp();
           this_form.find('.sent-message').slideDown();
           this_form.find("input:not(input[type=submit]), textarea").val('');
