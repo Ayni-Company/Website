@@ -254,6 +254,10 @@ h6 {
   background: #cc1616;
 }
 
+.nav-menu .active a {
+  color: white !important;
+}
+
 .nav-menu .drop-down ul {
   display: block;
   position: absolute;
@@ -826,7 +830,7 @@ section {
 
 .portfolio #portfolio-flters li:hover,
 .portfolio #portfolio-flters li.filter-active {
-  color: #e82d2d;
+  font-weight: 800;
 }
 
 .portfolio #portfolio-flters li:last-child {
@@ -1063,7 +1067,7 @@ section {
   padding-top: 10px;
   font-size: 14px;
   font-style: italic;
-  color: #aaaaaa;
+  color: #555555;
 }
 
 .team .member .social {
