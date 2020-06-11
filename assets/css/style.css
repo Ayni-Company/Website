@@ -192,6 +192,9 @@ h6 {
   color: rgb(25, 25, 25);
 }
 
+
+
+
 #header .logo img {
   max-height: 40px;
 }
@@ -254,9 +257,19 @@ h6 {
   background: #cc1616;
 }
 
+#header .nav-menu > ul > li:hover a {
+  color: white;
+}
+
 .nav-menu .active a {
   color: white !important;
 }
+
+.nav-menu a:hover {
+  color: white !important;
+}
+
+
 
 .nav-menu .drop-down ul {
   display: block;
